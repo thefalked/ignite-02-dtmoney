@@ -20,6 +20,8 @@ export function App() {
 
   return (
     <>
+      <GlobalStyle />
+
       <Header onOpenNewTransactionModal={handleOpenNewTransactionModal} />
 
       <Dashboard />
@@ -28,8 +30,6 @@ export function App() {
         isOpen={isNewTransactionModalOpen}
         onRequestClose={handleCloseNewTransactionModal}
       />
-
-      <GlobalStyle />
     </>
   );
 }

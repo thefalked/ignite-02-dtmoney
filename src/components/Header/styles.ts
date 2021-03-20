@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { darken } from "polished";
+
 export const Container = styled.header`
   background-color: var(--blue);
 `;
@@ -26,7 +28,7 @@ export const Content = styled.div`
     transition: filter 0.2s;
     
     &:hover {
-      filter: brightness(0.9);
+      background-color: ${darken(0.025, "#6933FF")};
     }
   }
 `;
